@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --green: #3a9c8a;
+    --dark-green: #335f57;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/fly.jpg);
+    background-position: center;
+    background-size: 100vh;
+    background-size: cover; 
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+a {
+    font-size: 1.5rem;
+    color: var(--dark-green);
+    display: block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+input {
+    background-color: transparent;
+    border: 0rem;
+    border-bottom: 0.1rem solid var(--black);
+}
+
+/****************************************************************************************************/
+.container {
+    width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container__header {
+    margin: 15rem 0rem 0rem 0rem;
+}
+
+.container__header-img img {
+    width: 4.5%;
+}
+
+/****************************************************************************************************/
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: var(--black) !important;/*!Important sirve para dar orden inmediata de cambiar el color*/
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: var(--black) !important;
+    opacity: 1 /* esto es porque Firefox le reduce la opacidad por defecto */;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: var(--black) !important;
+    opacity: 1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--black) !important;
+    }
+
+.form__username, .form__email, .form__password {
+    padding: 1rem 0rem;
+    border: 0;
+}
+
+.form__send {
+    margin-top: 4rem;
+}
+
+.form__send input {
+    width: 20%;
+    border: 0.5rem solid var(--green);
+    border-radius: 0.6rem;
+    background-color: var(--green);
+    font-weight: 700;    
+    text-transform: uppercase;
+}
+
+.form__send input:hover {
+    background-color: var(--dark-green);
+    border: 0.5rem solid var(--dark-green);
+    transition: all 0.5s;
+}
+
+/****************************************************************************************************/
+.container__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.container__footer-privacy {
+    font-size: 1.2rem;
+}
+
+.container__footer-terms {
+    padding-left: 5rem; 
+    font-size: 1.2rem;   
+}
